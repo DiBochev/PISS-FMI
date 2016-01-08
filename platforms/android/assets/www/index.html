@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta http-equiv="Content-Security-Policy"/>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    	
+    	
+    	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+		<script type="text/javascript" charset="utf-8" src="cordova.js"></script>      	
+    	<script src="js/jquery-2.0.1.min.js"></script>
+    	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <title>Product Market</title>
+    </head>
+    <body>
+    
+    <!--  Menu -->
+		<div data-role="panel" id="panel-1" data-theme="b">
+			<ul data-role="listview" id="categoryMainPage">
+				<!-- Categories goes here -->
+			</ul>
+			<ul data-role="listview" id="listview-1">
+				<li><a href="#LogIn">Help</a></li>
+				<li><a href="#about">About</a></li>
+			</ul>
+		</div>
+
+    <!--  Main screen -->
+		<div data-role="page" id="page-1">
+			<div data-role="header">
+			<a onclick="getCategories(true)" id="button-2" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">menu</a>
+			<a onclick="refresh(false)" id="button-refresh" class="ui-btn ui-icon-refresh ui-btn-icon-notext ui-corner-all">refresh</a>
+			
+				<h1>Product Market</h1>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview" id="productsMainPage">
+				<!-- Products goes here -->
+				</ul>
+			</div>
+		</div>
+    
+		<!-- About -->
+		<div data-role="page" id="about">
+			<div data-role="header">
+				<h1>About</h1>
+			</div>
+			<div data-role="content">
+				<p align="center">Made by</p>
+				<h1 align="center">Dimitar Bochev</h1>
+			</div>
+		</div>
+		
+        <!-- <script type="text/javascript" src="cordova.js"></script> -->
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
